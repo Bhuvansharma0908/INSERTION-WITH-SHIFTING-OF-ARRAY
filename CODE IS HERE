@@ -1,0 +1,40 @@
+#include<stdio.h>
+int main()
+{
+    int i,j,a[100],b,c,d,k;
+    printf("HOW MANY ELEMNTS YOU WANT TO ADD >> ");
+    scanf("%d",&k);
+
+    for(i=0;i<k;i++)
+    {
+        printf("ENTER THE %d NUMBER",i+1);
+        scanf("%d",&a[i]);
+    }
+    printf("ENTER THE NUMBER OU WANT TO ADD -- ");
+    scanf("%d",&b);
+    printf("ENTER THE POSITION -- ");
+    scanf("%d",&c);
+
+    for(i=0;i<k+1;i++)
+    {
+        if(i==0)
+        {
+            printf("%d",a[i]);
+        }
+        if(i>0 && i<c-1)
+        {
+            printf("%d",a[i]);
+        }
+        if(i==c-1)
+        {
+             printf("%d",b);
+        }
+
+        if(i>=c-1 && i<k)
+        {
+           
+            printf("%d",a[i]);
+        }
+    }
+    return 0;
+}
